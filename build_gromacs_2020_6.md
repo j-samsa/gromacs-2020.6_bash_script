@@ -1,0 +1,9 @@
+echo "# gromacs-2020.6_bash_script" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/j-samsa/gromacs-2020.6_bash_script.git
+git push -u origin main
+
+
