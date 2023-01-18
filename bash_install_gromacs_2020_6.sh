@@ -11,7 +11,7 @@ make check
 make install
 echo 'source $HOME/gromacs_2020.6/bin/GMXRC' >> $HOME/.bashrc
 cd $HOME
+source ~/.bashrc
 rm -r gromacs-2020.6
 rm gromacs-2020.6.tar.gz
-gmx --version
-echo 'Installation finished successfully'
+gmx --version && echo 'Installation finished successfully'
