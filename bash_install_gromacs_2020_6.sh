@@ -1,7 +1,7 @@
 #!/bin/bash
 cd $HOME
 wget https://ftp.gromacs.org/gromacs/gromacs-2020.6.tar.gz
-tar xfz gromacs-2020.6.tar.gz
+tar xfzv gromacs-2020.6.tar.gz
 cd gromacs-2020.6
 mkdir build
 cd build
