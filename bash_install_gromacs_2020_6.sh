@@ -1,4 +1,5 @@
 #!/bin/bash
+cd $HOME
 wget https://ftp.gromacs.org/gromacs/gromacs-2020.6.tar.gz
 tar xfz gromacs-2020.6.tar.gz
 cd gromacs-2020.6
@@ -9,5 +10,8 @@ make
 make check
 make install
 echo 'source $HOME/gromacs_2020.6/bin/GMXRC' >> $HOME/.bashrc
+cd $HOME
 rm -r gromacs-2020.6
 rm gromacs-2020.6.tar.gz
+gmx --version
+echo 'Installation finished successfully'
